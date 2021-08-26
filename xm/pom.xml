@@ -5,15 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.brzm</groupId>
-  <artifactId>xmsproject</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>xm</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>cloud-server-eureka</module>
-    <module>xm</module>
-  </modules>
 
-  <name>xmsproject</name>
+  <name>xm</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -22,7 +17,17 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+
   <dependencies>
+    <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>1.5.7.RELEASE</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
